@@ -35,7 +35,7 @@ namespace WebAPISample.Modules
         private static bool CheckPassword(string username, string password)
         {
             bool validUser = false;
-            
+
             // put your database or authentication calls here
 
             validUser = username == "test" && password == "test";
@@ -106,7 +106,7 @@ namespace WebAPISample.Modules
             {
                 if (request.Headers.AllKeys.Contains("X-Requested-With"))
                 {
-                    if(request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                    if (request.Headers["X-Requested-With"] == "XMLHttpRequest")
                     {
                         authType = "xBasic";
                     }
