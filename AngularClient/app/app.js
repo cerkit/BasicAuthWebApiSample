@@ -2,7 +2,7 @@
 
 /**
  * $http interceptor.
- * On 401 response - it stores the request and broadcasts 'event:loginRequired'.
+ * On 401 response - it stores the request and broadcasts 'event:auth-loginRequired'.
  */
 angular.module('app').config(function ($httpProvider) {
     $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -28,7 +28,6 @@ angular.module('app').config(function ($httpProvider) {
             }
             // otherwise
             return $q.reject(response);
-
         }
 
         return function (promise) {
