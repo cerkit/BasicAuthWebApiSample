@@ -1,0 +1,16 @@
+﻿<div class="modal h1">
+    <div class="h2 container alert-info modal-body" data-backdrop="static">
+        Login<br /><br />
+        <div class="alert-danger">{{error}}</div>
+        <ng-form class="form-horizontal">
+            Username:
+            <input class="form-control" ng-model="username" />
+            Password:
+            <input class="form-control" type="password" ng-model="password" />
+            <br />
+            <button class="btn-default" ng-click="login(username, password)">Login</button>
+            <br />
+        </ng-form>
+        <br />
+    </div>
+</div>

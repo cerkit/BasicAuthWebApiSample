@@ -13,7 +13,7 @@ namespace WebAPISample.Modules
 {
     public class BasicAuthHttpModule : IHttpModule
     {
-        private const string Realm = "absc.local";
+        private const string Realm = "sample.local";
 
         public void Init(HttpApplication context)
         {

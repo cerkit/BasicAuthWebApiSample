@@ -32,6 +32,7 @@ namespace WebAPISample.Controllers
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)
         {
+            string a = value;
         }
 
         // DELETE api/values/5
